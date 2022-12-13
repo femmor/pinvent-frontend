@@ -1,0 +1,30 @@
+// Loader
+.loader-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    animation: spinner 0.7s linear infinite;
+    margin: 1rem auto;
+    position: relative;
+  }
+
+  .loader-icon {
+    position: absolute;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

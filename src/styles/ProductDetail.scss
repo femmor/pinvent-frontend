@@ -1,0 +1,36 @@
+.product-detail {
+  margin-bottom: 5rem;
+  width: 100%;
+  max-width: 500px;
+  .card {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+  }
+  .detail {
+    & > * {
+      margin-bottom: 1rem;
+    }
+    .badge {
+      background-color: var(--color-danger);
+      color: #fff;
+      padding-left: 4px;
+      padding-right: 4px;
+      border-radius: 5px;
+    }
+    p b {
+      color: var(--dark-blue);
+    }
+  }
+}
+
+.group {
+  // border: 1px solid var(--dark-blue);
+  padding: 5px;
+
+  .product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
