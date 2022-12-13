@@ -118,7 +118,7 @@ const productSlice = createSlice({
 
       const arr = [];
 
-      products.map(item => {
+      products?.map(item => {
         const { price, quantity } = item;
         const productValue = price * quantity;
         return arr.push(productValue);
